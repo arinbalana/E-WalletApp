@@ -119,20 +119,6 @@ Or use your IDE to run `EWalletApplication.java`
 
 ---
 
-## 📁 Where to Place This `README.md`
-
-Place it at the **root of your project**, i.e. the same level as your `src/` folder and `pom.xml` file.
-
-```
-.
-├── README.md       ✅ <-- here
-├── pom.xml
-├── src/
-└── ...
-```
-
----
-
 ## 📝 License
 
 This project is for learning purposes. No license attached.
