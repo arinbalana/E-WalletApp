@@ -18,7 +18,7 @@ public class UserService {
 	private WalletRepository walletRepo;
 	
 	public User registerUser(User user) {
-		user.setPassword(new BCryptPasswordEncoder().encode(user.getPassword()));
+		user.setPassword(new BCryptPasswordEncoder(12).encode(user.getPassword()));
 		User savedUser = userRepo.save(user);
 		Wallet wallet = new Wallet();
 		wallet.setUser(savedUser);

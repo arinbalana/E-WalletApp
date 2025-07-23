@@ -22,12 +22,12 @@ public class User {
 	@jakarta.persistence.Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long Id;
-	
+	@Column(unique = true)
 	private String name;
 	@Column(unique = true)
 	private String email;
 	
-	@JsonIgnore
+//	@JsonIgnore
 	private String password;
 	
 	@OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
